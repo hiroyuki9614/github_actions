@@ -6,3 +6,11 @@ jobs:
     steps:
       - run: echo "hello, world"
       - uses: actions/checkout@v4
+
+name: Workflow
+on: push
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - run: date
